@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarela</title>
+    <style>
+        body {
+            background-color: rgb(252, 252, 105);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, p, nav, a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+        button {
+        width: 9em;
+        height: 3em;
+        border-radius: 30em;
+        font-size: 15px;
+        font-family: inherit;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 4px 4px -1px #c5c5c5, -6px -6px 12px #ffffff;
+    }
+
+    .vcinza::before {
+        content: '';
+        width: 0;
+        height: 3em;
+        border-radius: 30em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #bdbdbd 0%,#414141 100%);
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+    }
+
+    button:hover::before {
+        width: 9em;
+    }
+    </style>
+</head>
+<body>
+    <h1>Página Amarela</h1>
+    <p>Você agora estána área amarela. Você acessou clicando no segundo link da página principal.</p>
+    <nav>
+       <button class="vcinza">
+          <a href="pagina1.html">Voltar para página cinza</a>
+       </button>
+    </nav>
+</body>
+</html>
