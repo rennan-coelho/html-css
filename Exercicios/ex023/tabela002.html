@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        table {
+            width: 5 class='number'00px;
+            height: 100px;
+            border-collapse: collapse;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+        }
+
+        th {
+            background-color: rgb(146, 146, 146);
+            color: white;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+    
+        td.number {
+            text-align: right;
+        }
+
+        td#traco {
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.26);
+            padding: 2px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas faceis</h1>
+    <!--
+       ANATOMIA PARA TABELAS GRANDES
+         TABLE
+           CAPTION
+           THEAD
+              TR, TB, TH
+           TBODY
+              TR, TB ,TH
+           TFOOT
+              TR, TB ,TH
+    -->
+    <table>
+        <caption>Top 20 paises mais populosos do mundo</caption>
+        <thead>
+           <th scope="col" style="width: 60px;">Posição</th>
+           <th scope="col" style="width: 200px;">País</th>
+           <th scope="col">População</th>
+        </thead>
+        <tbody>
+           <tr>
+             <td>1</td>
+             <td>India</td>
+             <td class="number">1.429.921.746</td>
+           </tr>
+           <tr>
+             <td>2</td>
+             <td>China</td>
+             <td class="number">1.426.391.81</td>
+           </tr>
+           <tr>
+             <td>3</td>
+             <td>EUA</td>
+             <td class="number">339.987.103</td>
+           </tr>
+           <tr>
+            <td>4</td>
+            <td>Indonésia</td>
+            <td class="number">277.184.719</td>
+           </tr>
+           <tr>
+            <td>5</td>
+            <td>Paquistão</td>
+            <td class="number">240.215.932</td>
+           </tr>
+           <tr>
+            <td>6</td>
+            <td>Nigéria</td>
+            <td class="number">223.899.057</td>
+           </tr>
+           <tr>
+            <td>7</td>
+            <td>Brasil</td>
+            <td class="number">203.062.512</td>
+           </tr>
+           <tr>
+            <td>8</td>
+            <td>Bangladesh</td>
+            <td class="number">172.452.382</td>
+           </tr>
+           <tr>
+            <td>9</td>
+            <td>Rússia</td>
+            <td class="number">148.221.749</td>
+           </tr>
+           <tr>
+            <td>10</td>
+            <td>México</td>
+            <td class="number">134.127.189</td>
+           </tr>
+           <tr>
+            <td>11</td>
+            <td>Etiópia</td>
+            <td class="number">125.092.825</td>
+           </tr>
+           <tr>
+            <td>12</td>
+            <td>Japão</td>
+            <td class="number">124.127.899</td>
+           </tr>
+           <tr>
+            <td>13</td>
+            <td>Filipinas</td>
+            <td class="number">109.581.078</td>
+           </tr>
+           <tr>
+            <td>14</td>
+            <td>Egito</td>
+            <td class="number">102.334.404</td>
+           </tr>
+           <tr>
+            <td>15</td>
+            <td>Vietname</td>
+            <td class="number">97.338.579</td>
+           </tr>
+           <tr>
+            <td>16</td>
+            <td>República democrática do congo</td>
+            <td class="number">89.561.403</td>
+           </tr>
+           <tr>
+            <td>17</td>
+            <td>Turquia</td>
+            <td class="number">84.339.067</td>
+           </tr>
+           <tr>
+            <td>18</td>
+            <td>Irã</td>
+            <td class="number">83.783.949</td>
+           </tr>
+           <tr>
+            <td>19</td>
+            <td>Alemanha</td>
+            <td class="number">83.992.942</td>
+           </tr>
+           <tr>
+            <td>20</td>
+            <td>Tailândia</td>
+            <td class="number">69.799.978</td>
+           </tr>
+        </tbody>
+        <tfoot>
+           <tr>
+             <th scope="row" colspan="2">Total de habitantes</th>
+             <td class="number"><strong>5.565.624.794</strong></td>
+           </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, repellendus? Ipsum placeat, qui at velit eligendi illo dolores, veniam rerum magni dolor consequatur iusto! Omnis velit pariatur exercitationem maiores odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem esse corporis, quam nihil commodi culpa consectetur nam placeat maxime qui, quaerat libero magnam non perspiciatis cum. Excepturi, accusantium nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nobis illo quos necessitatibus, debitis quidem ex, dolore quasi nihil praesentium odit adipisci? Quae molestiae sunt quidem delectus expedita autem ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, officia. Quae ratione aperiam impedit necessitatibus nobis numquam beatae officia! Molestias accusantium accusamus nihil autem unde ea nobis sint placeat impedit.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, repellendus? Ipsum placeat, qui at velit eligendi illo dolores, veniam rerum magni dolor consequatur iusto! Omnis velit pariatur exercitationem maiores odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem esse corporis, quam nihil commodi culpa consectetur nam placeat maxime qui, quaerat libero magnam non perspiciatis cum. Excepturi, accusantium nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nobis illo quos necessitatibus, debitis quidem ex, dolore quasi nihil praesentium odit adipisci? Quae molestiae sunt quidem delectus expedita autem ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, officia. Quae ratione aperiam impedit necessitatibus nobis numquam beatae officia! Molestias accusantium accusamus nihil autem unde ea nobis sint placeat impedit.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, repellendus? Ipsum placeat, qui at velit eligendi illo dolores, veniam rerum magni dolor consequatur iusto! Omnis velit pariatur exercitationem maiores odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem esse corporis, quam nihil commodi culpa consectetur nam placeat maxime qui, quaerat libero magnam non perspiciatis cum. Excepturi, accusantium nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nobis illo quos necessitatibus, debitis quidem ex, dolore quasi nihil praesentium odit adipisci? Quae molestiae sunt quidem delectus expedita autem ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, officia. Quae ratione aperiam impedit necessitatibus nobis numquam beatae officia! Molestias accusantium accusamus nihil autem unde ea nobis sint placeat impedit.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, repellendus? Ipsum placeat, qui at velit eligendi illo dolores, veniam rerum magni dolor consequatur iusto! Omnis velit pariatur exercitationem maiores odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem esse corporis, quam nihil commodi culpa consectetur nam placeat maxime qui, quaerat libero magnam non perspiciatis cum. Excepturi, accusantium nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nobis illo quos necessitatibus, debitis quidem ex, dolore quasi nihil praesentium odit adipisci? Quae molestiae sunt quidem delectus expedita autem ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, officia. Quae ratione aperiam impedit necessitatibus nobis numquam beatae officia! Molestias accusantium accusamus nihil autem unde ea nobis sint placeat impedit.</p>
+
+    <h4>Dados fornecidos da <a href="https://pt.wikipedia.org/wiki/Lista_de_pa%C3%ADses_por_popula%C3%A7%C3%A3o" target="_blank">Wikipedia</a></h4>
+</body>
+</html>
