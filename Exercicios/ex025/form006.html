@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="ycor">Cor: </label>
+            <input type="color" name="cor" id="ycor" value="#ff00ff">
+        </p>
+        <p>
+            <label for="ynivel">Nivel</label>
+            <input type="range" name="nivel" id="ynivel" min="0" max="5" value="1">
+        </p>
+        <p>
+            <label for="yfoto">Foto perfil</label>
+            <input type="file" name="foto" id="yfoto">
+        </p>
+        <p>
+            <input type="submit" value="Vamos lá!">
+            <input type="reset" value="Apague tudo">
+        </p>
+    </form>
+</body>
+</html>
