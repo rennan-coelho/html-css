@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            width: 245px;
+            border-radius: 10px;
+            background-color: rgba(128, 128, 128, 0.141);
+        }
+
+        fieldset > p {
+            text-align: center;
+        }
+
+        legend {
+            text-align: center;
+            
+            background-color: rgb(206, 206, 206);
+            color: rgb(0, 0, 0);
+
+            padding: 5px 6px 5px 6px;
+            border-radius: 7px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend><strong>Dados de login</strong></legend>
+            <p>
+                <label for="ynome">Usuário</label>
+                <input type="text" name="nome" id="ynome" required minlength="6" maxlength="20" placeholder="seu user">
+            </p>
+            <p>
+                <label for="yemail">Email</label>
+                <input type="email" name="email" id="yemail" required autocomplete="email" placeholder="seu email">
+            </p>
+            <p>
+                <label for="ytel">Telefone</label>
+                <input type="tel" name="tel" id="ytel" required placeholder="(xx)x xxxx-xxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <!-- ESTUDAR MAIS SOBRE EXPRESSÕES REGULARES (RegEx) -->
+        <p>
+            <input type="submit" value="Vamos lá">
+            <input type="reset" value="Apagar tudo">
+        </p>
+    </form>
+</body>
+</html>
