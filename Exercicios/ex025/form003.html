@@ -9,36 +9,64 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: black;
             color: white;
+            padding: 0px;
+            margin: 3px;
+        }
+
+        h1 {
+            text-align: left;
+            margin: 20px;
+
+        }
+
+        form {
+            text-align: center left;
+            text-decoration: none;
+        }
+
+        label {
+            background-color: rgb(116, 116, 116);
+            padding: 3px;
+            border-radius: 10px;
+        }
+
+        input {
+            border-radius: 10px;
+            padding: 3px;
+            text-align: center;
+        }
+        input#ynome {
+            padding: 3px;
         }
     </style>
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="ynome">Nome</label>
-            <input type="text" name="nome" id="ynome" required maxlength="25" minlength="8" placeholder="Nome completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="ymedia">Média</label>
-            <input type="number" name="media" id="ymedia" required min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
-        </p>
-        <p>
-            <label for="ymes">Periodo letivo</label>
-            <input type="month" name="mes" id="ymes" value="2023-07">
-        </p>
-        <p>
-            <label for="ydia">Dia da prova</label>
-            <input type="date" name="dia" id="ydia" value="2023-07-23">
-        </p>
-        <p>
-            <label for="yhora">Horário da prova</label>
-            <input type="time" name="hora" id="yhora">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="ynome">Nome</label>
+                <input type="text" name="nome" id="ynome" required maxlength="25" minlength="8" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="ymedia">Média</label>
+                <input type="number" name="media" id="ymedia" required min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
+            </p>
+            <p>
+                <label for="ymes">Periodo letivo</label>
+                <input type="month" name="mes" id="ymes" value="2023-07">
+            </p>
+            <p>
+                <label for="ydia">Dia da prova</label>
+                <input type="date" name="dia" id="ydia" value="2023-07-23">
+            </p>
+            <p>
+                <label for="yhora">Horário da prova</label>
+                <input type="time" name="hora" id="yhora">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
 </body>
 </html>
