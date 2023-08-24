@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+   
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="yn1">Número 1</label>
+            <input type="number" name="n1" id="yn1" min="0" max="40" required oninput="ysoma.innerHTML = Number(yn1.value) + Number(yn2.value)"> <br>
+
+            <label for="yn2">Número 2</label>
+            <input type="number" name="n2" id="yn2" min="0" max="40" required  oninput="ysoma.innerHTML = Number(yn1.value) + Number(yn2.value)">
+        </p>
+
+        <p>
+            <label for="ysoma">Soma</label>
+            <output name="soma" id="ysoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Vamos lá">
+            <input type="reset" value="Limpe tudo">
+        </p>
+    </form>
+</body>
+</html>
