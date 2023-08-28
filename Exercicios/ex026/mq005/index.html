@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fofocount</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Mundo</a></li>
+                <li><a href="#">Geek</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Feiras do mundo agro são oportunidade de testar a Volkswagen Amarok no off-road</h2>
+            <p>As feiras agropecuárias são eventos imperdíveis para quem vive o agro brasileiro. Elas trazem as principais novidades do mercado e sempre proporcionam bons negócios - além de uma dose de entretenimento.</p>
+
+            <p>É por isso que o setor já vive uma grande expectativa pela 46ª edição da Expointer, uma das maiores da América Latina, que acontecerá de 26 de agosto e 3 de setembro no Parque de Exposições Assis Brasil, em Esteio (RS). A feira, que na edição do ano passado chegou a um faturamento de R$ 7,1 bilhões e recebeu mais de 742 mil pessoas, é sucesso de negócios e experiências.</p>
+
+            <p>Em um só lugar, o público encontra animais, produtos agrícolas e industriais, agricultura familiar, artesanato e tudo que há de novo e melhor para quem vive do trabalho no campo. E, se é assim, tem também Volkswagen Amarok, a picape mais potente da categoria.</p>
+
+            <p>Quem for ao evento poderá conferir de perto toda a potência e experimentar a Amarok em um circuito preparado pela Volkswagen no estande da marca. Uma ótima oportunidade de conhecer a picape com exclusivo motor V6 3.0 de 258cv de forma ainda mais interessante.</p>
+
+            <p>Tem sido assim em feiras e eventos agropecuários Brasil afora. A Volkswagen desembarca com seus principais lançamentos, como fez ao apresentar o Polo Track e seu hatch robusto e confiável, e o ID.4, primeiro SUV 100% elétrico da marca no país.</p>
+
+            <h3>Best-drive 4x4 com Amarok</h3>
+
+                <p>Para quem tem a picape como um parceiro do dia a dia, o espaço da Volkswagen nos grandes eventos é um convite irrecusável. Dá pra conferir cada detalhe da Amarok, toda a capacidade de carga da caminhonete, a maior da categoria (1.156kg/ 1.280l), e as outras vantagens na prática.</p>
+
+                <p>Um circuito especial remete aos desafios enfrentados na rotina do agro, incluindo os quilômetros rodados por terrenos de terra, cascalho e muito acidentados. É impossível acompanhar e não lembrar de algum momento do dia.</p>
+
+                <p>A experiência aumenta para quem resolve embarcar: no chamado best-drive, é possível sentir como a picape se comporta em uma pista off-road cheia de obstáculos e conferir diversos sistemas de segurança.</p>
+
+                <p>O 4x4 com exclusiva tecnologia de tração 4Motion faz com que a picape ofereça tração nas quatro rodas de forma permanente. O controle automático de descida, conhecido como HDC, permite melhor desempenho nesse tipo de terreno. </p>
+
+                <p>Tem exatamente o que o produtor rural busca. A função “Overboost” permite, durante 10 segundos, que o motorista tenha um incremento notável de potência, chegando a 272cv. Com transmissão automática de oito velocidades, pode ir de 0 a 100km/h em 7,4 segundos graças ao torque de 580Nm.</p>
+
+                <p id="cred">Noticia pega do <a href="https://g1.globo.com/economia/agronegocios/agro-de-gente-pra-gente/especial-publicitario/volkswagen/noticia/2023/07/31/feiras-do-mundo-agro-sao-oportunidade-de-testar-a-volkswagen-amarok-no-off-road.ghtml" target="_blank">G1.</a></p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
